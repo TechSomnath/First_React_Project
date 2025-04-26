@@ -1,9 +1,10 @@
 import React from 'react'
+import Root from './components/Root'
 
 export default function App() {
   return (
     <div>
-      <h2>hello somnath</h2>
+    <Root/>
     </div>
   )
 }
