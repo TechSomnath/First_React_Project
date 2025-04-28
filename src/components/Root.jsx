@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
 
 const Root = () => {
   return (
     <div>
-     <Navbar/>
+      <Navbar /> {/* Render Navbar inside Root */}
     </div>
-  )
-}
+  );
+};
 
-export default Root
+export default Root;

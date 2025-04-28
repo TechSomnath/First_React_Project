@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +24,21 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
-          <li className="hover:text-gray-300 cursor-pointer">Home</li>
-          <li className="hover:text-gray-300 cursor-pointer">Products</li>
-          <li className="hover:text-gray-300 cursor-pointer">Blogs</li>
-          <li className="hover:text-gray-300 cursor-pointer">Contact</li>
-          <li className="hover:text-gray-300 cursor-pointer">About</li>
+          <li className="hover:text-gray-300 cursor-pointer">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="hover:text-gray-300 cursor-pointer">
+            <Link to="/products">Products</Link>
+          </li>
+          <li className="hover:text-gray-300 cursor-pointer">
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li className="hover:text-gray-300 cursor-pointer">
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li className="hover:text-gray-300 cursor-pointer">
+            <Link to="/about">About</Link>
+          </li>
         </ul>
 
         <button className="hidden md:block bg-white text-green-800 px-4 py-2 rounded hover:bg-green-200">
@@ -39,11 +50,21 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden flex flex-col gap-4 mt-4">
           <ul className="flex flex-col gap-4">
-            <li className="hover:text-gray-300 cursor-pointer">Home</li>
-            <li className="hover:text-gray-300 cursor-pointer">Products</li>
-            <li className="hover:text-gray-300 cursor-pointer">Blogs</li>
-            <li className="hover:text-gray-300 cursor-pointer">Contact</li>
-            <li className="hover:text-gray-300 cursor-pointer">About</li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="products">Products</Link>
+            </li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/blogs">Blogs</Link>
+            </li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li className="hover:text-gray-300 cursor-pointer">
+              <Link to="/about">About</Link>
+            </li>
           </ul>
           <button className="bg-white text-green-800 px-4 py-2 rounded hover:bg-green-200 w-full">
             Login

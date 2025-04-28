@@ -1,10 +1,14 @@
-import React from 'react'
-import Root from './components/Root'
+import React from "react";
+import { Outlet } from "react-router-dom"; // For rendering child routes
 
-export default function App() {
+const App = () => {
   return (
     <div>
-    <Root/>
+      
+      <Outlet />{" "}
+      
     </div>
-  )
-}
+  );
+};
+
+export default App;
