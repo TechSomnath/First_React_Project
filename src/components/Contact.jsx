@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Contact() {
+const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      
+    </div>
   )
 }
 
