@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { Link, useLocation } from "react-router-dom"; // 🔄 useLocation added
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +12,7 @@ const Navbar = () => {
   };
 
   const handleLinkClick = () => {
-    console.log("link clicked");
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   return (
@@ -84,9 +83,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <button className="bg-white text-green-800 px-4 py-2 rounded hover:bg-green-200">
-              Login
-            </button>
+            <Link to="/login" onClick={handleLinkClick}>
+              <button className="bg-white text-green-800 px-4 py-2 rounded hover:bg-green-200">
+                Login
+              </button>
+            </Link>
           </li>
         </ul>
       </div>
@@ -149,9 +150,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <button className="bg-white text-green-800 px-4 py-2 rounded hover:bg-green-200 w-full">
-            Login
-          </button>
+          <Link to="/login" onClick={handleLinkClick}>
+            <button className="bg-white text-green-800 px-4 py-2 rounded hover:bg-green-200 w-full">
+              Login
+            </button>
+          </Link>
         </div>
       )}
     </nav>

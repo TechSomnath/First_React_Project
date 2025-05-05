@@ -1,11 +1,11 @@
 import React from "react";
-import { Outlet } from "react-router-dom"; 
-import Navbar from "./Navbar"; 
-import Footer from "./Footer"; 
+import { Outlet } from "react-router-dom";
+import Navbar from "../shared/Navbar";
+import Footer from "../shared/Footer";
 
 const Root = () => {
   return (
-    <div >
+    <div>
       <Navbar />
       <main className="flex-grow">
         <Outlet />

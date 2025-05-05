@@ -1,8 +1,9 @@
 import React from "react";
-import Root from "./components/Root"; // Import the Root component
+import Root from "./components/layout/Root";
+
 
 const App = () => {
-  return <Root />; // Directly render the Root component
+  return <Root/>; 
 };
 
 export default App;
