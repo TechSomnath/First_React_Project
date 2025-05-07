@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div
-      className="relative flex flex-col items-center justify-center text-white px-4"
+      className="relative flex flex-col h-[100vh] items-center justify-center text-white px-4"
       style={{
         backgroundImage:
           "url(https://img.freepik.com/premium-photo/emerald-green-background-lights-isolated-it-style-stars-art-group_275207-3175.jpg)",
